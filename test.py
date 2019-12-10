@@ -70,7 +70,7 @@ def edit(s_no):
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    uname = db.Column(db.String(40),unique=False, nullable=False)
+    uname = db.Column(db.String(40),unique=True, nullable=False)
     email = db.Column(db.String(40), unique=False, nullable=False)
     password = db.Column(db.String(40),unique=False, nullable=False)
     role = db.Column(db.String(40), unique=False, nullable=False)
